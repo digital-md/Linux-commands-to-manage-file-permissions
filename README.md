@@ -1,18 +1,16 @@
-<h1>JWipe - Disk Sanitization</h1>
-
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<h1>Linux Commands to Manage File Permissions</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+At my organization, the research team needs to update the file permissions and directories in the system. I will go into the projects directory and make sure the users have the appropriate permissions and update those necessary to provide a more secure system. The permissions currently do not match the level of authorization provided. Making sure you check the system and update it will help keep it secure. To complete this, I will perform the following tasks. See below 
 <br />
 
+<b>Check file and directory details</b> 
 
-<h2>Languages and Utilities Used</h2>
+The following codes demonstrate how Linux commands were used to update the permissions in the directories in the system files.
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
 
-<h2>Environments Used </h2>
+In the first line, it describes the command line I used; the remaining line is the output. This code lists all of the contents within the project's directory. I used the ls command combined with the -la option to display all contents including hidden files. The output of my command displays that there is a drafts directory, a hidden file .project_x.txt, and six (6) other files. The first 10 characters in the string represent the permissions the user, group, and other have on each file or directory. 
+
 
 - <b>Windows 10</b> (21H2)
 
