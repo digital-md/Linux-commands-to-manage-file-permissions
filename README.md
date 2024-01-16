@@ -31,46 +31,18 @@ The organization had decided that in file project_k.txt the other should not hav
 
 Here we have a hidden file .project_x.txt, with the current permissions -rw—w---- the organization let the research team know that this hidden file should not have permissions to write at all. I was notified to make the file readable for the user and group only. We used the chmod command to change the permissions. Then u for user – hyphen to subtract, like so u-w to remove writing privileges for the user and g-w to remove writing permissions for the group. We next listed the hidden file.project_x.txt for the file path that needed to be modified.  After completing it I used the ls -la to review the update.  
 
+![image](https://github.com/digital-md/Linux-commands-to-manage-file-permissions/assets/156498985/e9eb89d9-8804-4fbc-a375-b06452904fa9)
 
-- <b>Windows 10</b> (21H2)
+<b>Change directory permissions</b>
 
-<h2>Program walk-through:</h2>
+The organization only wants researcher2 user to have access to the drafts directory. No one else other than researcher2 should have execute permissions. The following code will demonstrate how I used Linux commands to change this directory's permissions. First, I used the chmod command to change permissions, Second I used the g for group and – hyphen to subtract x for execute from drafts. Now you can see that only the user now has execute permissions. 
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![image](https://github.com/digital-md/Linux-commands-to-manage-file-permissions/assets/156498985/4d1911d3-5f14-4d4d-aed5-8575258a03a3)
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+<b>Summary</b>
+
+I did as my organization had requested by changing multiple permissions to match the level of authorization in the project's directory and files. I used the ls -la command to review the contents of the directory and the chmod to change or modify any permissions necessary.  
+
+
 ```
 --!>
