@@ -25,6 +25,13 @@ For example: For project_r.txt , the first 10 characters are -rw-rw-r—that mea
 
 The organization had decided that in file project_k.txt the other should not have writing permissions. Therefore, you can see In the string how it was changed. I used the chmod command to change it, o for other, and – subtract w for writing permissions from project_k.txt file. Additionally, in the file project_m.txt the group was not to have reading permission. I used the chomd command once again and g for group hyphen – for subtracting the r for reading and the file name to change this. After I used ls -la to review the updates.  Here is the string with a list of Linux commands used to change file permissions. 
 
+![Screenshot 2024-01-16 013534 chmod](https://github.com/digital-md/Linux-commands-to-manage-file-permissions/assets/156498985/31883a54-200d-416f-a383-b9a523ecddf7)
+
+<b>Change file permissions on a hidden file</b>
+
+Here we have a hidden file .project_x.txt, with the current permissions -rw—w---- the organization let the research team know that this hidden file should not have permissions to write at all. I was notified to make the file readable for the user and group only. We used the chmod command to change the permissions. Then u for user – hyphen to subtract, like so u-w to remove writing privileges for the user and g-w to remove writing permissions for the group. We next listed the hidden file.project_x.txt for the file path that needed to be modified.  After completing it I used the ls -la to review the update.  
+
+
 - <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
